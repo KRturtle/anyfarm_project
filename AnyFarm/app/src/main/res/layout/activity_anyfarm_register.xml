@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnyFarm_Register">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary"
+            android:layout_weight="3">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="애니팜을 등록해주세요!"
+                android:textStyle="bold"
+                android:textSize="32dp"
+                android:textColor="#000000"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="30dp"
+                android:layout_weight="2"
+                android:layout_marginTop="60dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" - 모델번호와 식물종류를 입력하세요"
+                android:textStyle="italic"
+                android:textSize="14dp"
+                android:textColor="#000000"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="30dp"
+                android:layout_weight="1"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="520dp"
+            android:layout_weight="3"
+            android:background="#dcdcdc"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/white_background"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/addAnyFarm_idText"
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:background="@color/colorPrimary"
+                        android:drawableStart="@drawable/ic_person_black_24dp"
+                        android:drawableLeft="@drawable/ic_person_black_24dp"
+                        android:hint="아이디"
+                        android:padding="10dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#000000" />
+
+                    <EditText
+                        android:id="@+id/modelNumber"
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:background="@color/colorPrimary"
+                        android:drawableStart="@drawable/ic_lock_black_24dp"
+                        android:drawableLeft="@drawable/ic_lock_black_24dp"
+                        android:hint="모델번호"
+                        android:padding="10dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#000000" />
+
+                    <EditText
+                        android:id="@+id/plantKind"
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="15dp"
+                        android:background="@color/colorPrimary"
+                        android:drawableStart="@drawable/ic_account_circle_24dp"
+                        android:drawableLeft="@drawable/ic_account_circle_24dp"
+                        android:hint="식물종류"
+                        android:padding="10dp"
+                        android:textColor="#000000"
+                        android:textColorHint="#000000" />
+
+                    <Button
+                        android:id="@+id/anyFarmRegButton"
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/colorPrimaryDark"
+                        android:text="등록완료"
+                        android:textColor="#ffffff"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:background="#ffffff"
+            android:layout_weight="4">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="홈"
+                android:layout_margin="15dp"
+                android:drawableTop="@drawable/ic_home_black_24dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:id="@+id/homeButton" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="화분등록"
+                android:layout_margin="15dp"
+                android:drawableTop="@drawable/ic_home_black_24dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:id="@+id/bottom_add_AnyFarm_Button" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="모니터링"
+                android:layout_margin="15dp"
+                android:drawableTop="@drawable/ic_video_label_black_24dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:id="@+id/bottom_monitorButton"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="환경설정"
+                android:layout_margin="15dp"
+                android:drawableTop="@drawable/ic_build_black_24dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:id="@+id/windowsButton"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
